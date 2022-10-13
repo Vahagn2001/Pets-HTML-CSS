@@ -1,0 +1,58 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+
+.main-header {
+    position: relative;
+    margin: 0;
+
+    &__title {
+        @extend .subtitle;
+        background-color: var(--primary);
+        color: var(--white);
+        text-align: center;
+        padding-left: crem(50px);
+        padding-right: crem(20px);
+    }
+
+    &__navigation {
+        padding: crem(29px) crem(215px);
+    }
+
+    &__links-list {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        gap: 5rem;
+    }
+
+    &__link-item:first-child {
+        margin-right: crem(118px);
+    }
+
+    &__navigation-menu {
+        display: none;
+    }
+
+    @media screen and (max-width: 1440px) {
+        &__navigation {
+            padding: crem(20px);
+        }
+
+        @media screen and (max-width: 1024px) {
+            &__links-list {
+                display: none;
+            }
+
+
+            &__navigation-menu {
+                display: block;
+                width: crem(30px);
+                color: var(--white);
+                position: absolute;
+                top: crem(4px);
+            }
+
+        }
+    }
+}

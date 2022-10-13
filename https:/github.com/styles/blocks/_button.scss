@@ -1,0 +1,26 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+
+.btn {
+    padding: crem(14px) crem(24px);
+    border: crem(2px) solid var(--primary);
+    border-radius: crem(110px);
+    width: crem(201px);
+
+    @extend .text;
+
+    &--primary {
+        color: var(--white);
+        box-shadow: 0px 0px 20px #f63d3db3;
+        background-color: var(--primary);
+    }
+
+    &--transparent {
+        color: var(--primary);
+        background-color: transparent;
+    }
+
+    &:hover:first-child {
+        background-color: var(--primary-light);
+    }
+}

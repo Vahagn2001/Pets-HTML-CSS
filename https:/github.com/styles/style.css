@@ -1,0 +1,393 @@
+@font-face {
+  font-family: "Heldane Display";
+  src: url("./fonts/heldane-display/HeldaneDisplay-MediumItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Display";
+  src: url("./fonts/heldane-display/HeldaneDisplay-BoldItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Display";
+  src: url("./fonts/heldane-display/HeldaneDisplay-Bold.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Display";
+  src: url("./fonts/heldane-display/HeldaneDisplay-Medium.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Text";
+  src: url("./fonts/heldane-display/HeldaneText-BoldItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Display";
+  src: url("./fonts/heldane-display/HeldaneDisplay-Regular.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Text";
+  src: url("./fonts/heldane-display/HeldaneText-Bold.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Display";
+  src: url("./fonts/heldane-display/HeldaneDisplay-RegularItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Text";
+  src: url("./fonts/heldane-display/HeldaneText-MediumItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Text";
+  src: url("./fonts/heldane-display/HeldaneText-Regular.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Text";
+  src: url("./fonts/heldane-display/HeldaneText-RegularItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heldane Text";
+  src: url("./fonts/heldane-display/HeldaneText-Medium.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+hgroup,
+menu {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+}
+
+html {
+  --primary: #f63d3d;
+  --white: #fff;
+  --black: #000;
+  --secondary: #ffc632;
+  --primary-light: #e92323b3;
+  --third: #f6f6f6;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  width: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--white);
+  font-family: "Roboto", sans-serif;
+  color: var(--black);
+  line-height: 3rem;
+}
+
+.text, .btn {
+  font-size: 1.6rem;
+  line-height: 2em;
+  font-weight: 500;
+}
+
+.subtitle, .main-header__title {
+  font-size: 1.6rem;
+  line-height: 2.5em;
+  font-weight: 700;
+}
+
+.title, .main-section__titles {
+  font-size: 6.4rem;
+  line-height: 1.25em;
+  font-weight: 700;
+}
+
+.small {
+  font-size: 1.3rem;
+  line-height: 1.538em;
+  font-weight: 500;
+}
+
+.heading, .main-section__text {
+  font-size: 2.4rem;
+  line-height: 1.333em;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 1.4rem 2.4rem;
+  border: 0.2rem solid var(--primary);
+  border-radius: 11rem;
+  width: 20.1rem;
+}
+.btn--primary {
+  color: var(--white);
+  box-shadow: 0px 0px 20px rgba(246, 61, 61, 0.7019607843);
+  background-color: var(--primary);
+}
+.btn--transparent {
+  color: var(--primary);
+  background-color: transparent;
+}
+.btn:hover:first-child {
+  background-color: var(--primary-light);
+}
+
+.container, .main-section {
+  padding-left: 21.5rem;
+  padding-right: 21.5rem;
+}
+
+.main-header {
+  position: relative;
+  margin: 0;
+}
+.main-header__title {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+.main-header__navigation {
+  padding: 2.9rem 21.5rem;
+}
+.main-header__links-list {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 5rem;
+}
+.main-header__link-item:first-child {
+  margin-right: 11.8rem;
+}
+.main-header__navigation-menu {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  .main-header__navigation {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .main-header__links-list {
+    display: none;
+  }
+  .main-header__navigation-menu {
+    display: block;
+    width: 3rem;
+    color: var(--white);
+    position: absolute;
+    top: 0.4rem;
+  }
+}
+
+.main-section {
+  margin: 0;
+  background-color: var(--secondary);
+  background-image: url(../../images/banner.jpg);
+  background-repeat: no-repeat;
+  min-height: 90rem;
+  max-width: 160rem;
+  position: relative;
+}
+.main-section__discraption {
+  position: absolute;
+  top: 25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-section__titles {
+  text-transform: uppercase;
+}
+.main-section__text {
+  margin-top: 2rem;
+}
+.main-section__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 56px;
+  padding-bottom: 314px;
+}
+.main-section__btn--first {
+  margin-right: 2rem;
+}/*# sourceMappingURL=style.css.map */

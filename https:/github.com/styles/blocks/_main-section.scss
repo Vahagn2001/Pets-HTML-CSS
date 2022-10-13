@@ -1,0 +1,56 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+
+.main-section {
+    @extend .container;
+    margin: 0;
+    background-color: var(--secondary);
+    background-image: url(../../images/banner.jpg);
+    background-repeat: no-repeat;
+    min-height: crem(900px);
+    max-width: crem(1600px);
+    position: relative;
+
+    &__discraption {
+        position: absolute;
+        top: crem(250px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__titles {
+        @extend .title;
+        text-transform: uppercase
+    }
+
+    &__text {
+        margin-top: crem(20px);
+        @extend .heading;
+    }
+
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 56px;
+        padding-bottom: 314px;
+    }
+
+    &__btn--first {
+        margin-right: crem(20px);
+    }
+
+
+    @media screen and (max-width: 1440px) {
+      
+    }
+
+    @media screen and (max-width: 1024px) {
+
+    }
+}

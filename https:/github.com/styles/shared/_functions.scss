@@ -1,0 +1,5 @@
+$html-font-size: 10px;
+
+@function crem($size) {
+    @return #{$size / $html-font-size}rem;
+}
