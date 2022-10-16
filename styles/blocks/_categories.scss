@@ -1,0 +1,35 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+@use '../shared/colors' as *;
+
+.categories {
+    text-align: center;
+    padding-top: crem(103px);
+
+    &__title {
+        @include medium;
+    }
+
+    &__text {
+        color: var(--primary);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: crem(30px);
+        gap: crem(30px);
+    }
+
+    &__list-bg {
+        width: 270px;
+        height: 270px;
+        left: 215px;
+        top: 1853px;
+        border-radius: 10px;
+    }
+}

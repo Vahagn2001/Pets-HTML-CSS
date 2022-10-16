@@ -1,9 +1,13 @@
 @use '../shared/functions' as *;
 
-.text {
+@mixin text {
     font-size: crem(16px);
     line-height: 2em;
     font-weight: 500;
+}
+
+.text {
+    @include text
 }
 
 .subtitle {
@@ -18,14 +22,32 @@
     font-weight: 700;
 }
 
-.small {
+@mixin small {
     font-size: crem(13px);
     line-height: 1.538em;
     font-weight: 500;
 }
 
-.heading {
+.small {
+    @include small;
+}
+
+@mixin heading {
     font-size: crem(24px);
     line-height: 1.333em;
     font-weight: 400;
+}
+
+.heading {
+    @include heading;
+}
+
+@mixin medium {
+    font-size: crem(48px);
+    line-height: 1em;
+    font-weight: 400;
+}
+
+.medium {
+    @include medium;
 }

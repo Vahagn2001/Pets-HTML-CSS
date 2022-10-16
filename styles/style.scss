@@ -1,6 +1,3 @@
-// Fonts
-@use './fonts/heldane-display';
-
 // Shared
 @use './shared/reset';
 @use './shared/colors';
@@ -11,3 +8,5 @@
 @use './blocks/button';
 @use './blocks/main-header';
 @use './blocks/main-section';
+@use './blocks/dashbar';
+@use './blocks/categories';

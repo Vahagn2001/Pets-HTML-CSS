@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Pets Market</title>
 </head>
 
 <body>
     <header class="main-header">
         <p class="main-header__title">Free Shipping USA & Worldwide on All Orders</p>
+        <button type="button" class="main-header__navigation-menu">
+            <i class="fa fa-bars"></i>
+        </button>
         <nav class="main-header__navigation">
-            <button type="button" class="main-header__navigation-menu">
-                <i class="fa-duotone fa-bars"></i>
-            </button>
-
             <ul class="main-header__links-list">
                 <li class="main-header__link-item">
                     <a href="#" class="main-header__link">
-                        <img src="./images/search.svg"></i>
+                        <img src="./images/search.svg" alt="search"></i>
                     </a>
                 </li>
                 <li class="main-header__link-item">
@@ -36,7 +35,7 @@
                     <a href="#" class="main-header__link">Collections</a>
                 </li>
                 <li class="main-header__link-item">
-                    <img src="./images/logo.svg"></i>
+                    <img src="./images/logo.svg" alt="market logo"></i>
                 </li>
                 <li class="main-header__link-item">
                     <a href="#" class="main-header__link">Services</a>
@@ -49,12 +48,12 @@
                 </li>
                 <li class="main-header__link-item">
                     <a href="#" class="main-header__link">
-                        <img src="./images/cart.svg"></i>
+                        <img src="./images/cart.svg" alt="cart"></i>
                     </a>
                 </li>
                 <li class="main-header__link-item">
                     <a href="#" class="main-header__link">
-                        <img src="./images/user.svg"></i>
+                        <img src="./images/user.svg" alt="user"></i>
                     </a>
                 </li>
             </ul>
@@ -80,7 +79,76 @@
                 </button>
             </div>
         </section>
+
     </main>
+
+    <section class="dashbar">
+        <img src="./images/dog-heart.png" class="dashbar__img" alt="dog logo">
+        <h2 class="dashbar__title">
+            <span class="dashbar__name">What your pet needs,</span>
+            when they need it.
+        </h2>
+        <ul class="dashbar__list">
+            <li class="dashbar__list-item">
+                <div class="dashbar__icon-bg">
+                    <i class="fa fa-headset dashbar__icon"></i>
+                </div>
+                <p class="dashbar__text">24/7 Support</p>
+                <span class="dashbar__discraption">Shop online to get
+                    <br> orders over $35 shipped
+                    <br>fast and free.</span>
+            </li>
+
+            <li class="dashbar__list-item">
+                <div class="dashbar__icon-bg">
+                    <i class="fa fa-truck dashbar__icon"></i>
+                </div>
+                <p class="dashbar__text">Free Same-Day Delivery</p>
+                <span class="dashbar__discraption">Order by 2pm local time to
+                    <br> get free delivery on orders
+                    <br> $35+ today.</span>
+            </li>
+
+            <li class="dashbar__list-item">
+                <div class="dashbar__icon-bg">
+                    <i class="fa fa-shield-cat dashbar__icon"></i>
+                </div>
+                <p class="dashbar__text">Security payment</p>
+                <span class="dashbar__discraption">35% off your first order plus
+                    <br> 5% off all future orders.</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="categories">
+        <h2 class="categories__title">
+            <span class="categories__text">Top</span>
+            categories
+        </h2>
+        <ul class="categories__list">
+            <li class="categories__list-item">
+                <div class="categories__list-bg">
+                <img src="./images/cat-toy.png" alt="">
+                </div>
+                <p class="dashbar__title">Cat Toys</p>
+            </li>
+            <li class="categories__list-item">
+                <div class="categories__list-bg">
+                <img src="./images/dog-food.png" alt="">
+                </div>
+            </li>
+            <li class="categories__list-item">
+                <div class="categories__list-bg">
+                <img src="./images/cat-food.png" alt="">
+                </div>
+            </li>
+            <li class="categories__list-item">
+                <div class="categories__list-bg">
+                <img src="./images/dog-toy.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </section>
 </body>
 
 </html>

@@ -1,87 +1,3 @@
-@font-face {
-  font-family: "Heldane Display";
-  src: url("./fonts/heldane-display/HeldaneDisplay-MediumItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Display";
-  src: url("./fonts/heldane-display/HeldaneDisplay-BoldItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Display";
-  src: url("./fonts/heldane-display/HeldaneDisplay-Bold.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Display";
-  src: url("./fonts/heldane-display/HeldaneDisplay-Medium.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Text";
-  src: url("./fonts/heldane-display/HeldaneText-BoldItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Display";
-  src: url("./fonts/heldane-display/HeldaneDisplay-Regular.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Text";
-  src: url("./fonts/heldane-display/HeldaneText-Bold.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Display";
-  src: url("./fonts/heldane-display/HeldaneDisplay-RegularItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneDisplay-RegularItalic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Text";
-  src: url("./fonts/heldane-display/HeldaneText-MediumItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Text";
-  src: url("./fonts/heldane-display/HeldaneText-Regular.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Text";
-  src: url("./fonts/heldane-display/HeldaneText-RegularItalic.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-RegularItalic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Heldane Text";
-  src: url("./fonts/heldane-display/HeldaneText-Medium.woff2") format("woff2"), url("./fonts/heldane-display/HeldaneText-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 html,
 body,
 div,
@@ -237,6 +153,7 @@ html {
   --secondary: #ffc632;
   --primary-light: #e92323b3;
   --third: #f6f6f6;
+  --third-light: #9850c540;
 }
 
 .visually-hidden {
@@ -289,6 +206,12 @@ body {
   font-weight: 400;
 }
 
+.medium {
+  font-size: 4.8rem;
+  line-height: 1em;
+  font-weight: 400;
+}
+
 .btn {
   padding: 1.4rem 2.4rem;
   border: 0.2rem solid var(--primary);
@@ -338,6 +261,7 @@ body {
 }
 .main-header__navigation-menu {
   display: none;
+  left: 1%;
 }
 @media screen and (max-width: 1440px) {
   .main-header__navigation {
@@ -348,27 +272,34 @@ body {
   .main-header__links-list {
     display: none;
   }
+  .main-header__navigation {
+    display: none;
+  }
   .main-header__navigation-menu {
     display: block;
     width: 3rem;
     color: var(--white);
     position: absolute;
     top: 0.4rem;
+    font-size: 3rem;
   }
 }
 
 .main-section {
   margin: 0;
   background-color: var(--secondary);
-  background-image: url(../../images/banner.jpg);
+  background-image: url(../../images/background.png);
   background-repeat: no-repeat;
   min-height: 90rem;
   max-width: 160rem;
   position: relative;
+  background-size: 60%;
+  background-position: bottom right;
 }
 .main-section__discraption {
   position: absolute;
-  top: 25rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -380,14 +311,136 @@ body {
 }
 .main-section__text {
   margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 .main-section__buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 56px;
-  padding-bottom: 314px;
 }
 .main-section__btn--first {
   margin-right: 2rem;
+}
+@media screen and (max-width: 1440px) {
+  .main-section__discraption {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section {
+    padding: 0;
+    min-height: 70rem;
+  }
+  .main-section__discraption {
+    top: 40%;
+    left: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+  .main-section__titles {
+    font-size: 4.8rem;
+    line-height: 1em;
+    font-weight: 400;
+  }
+  .main-section__text {
+    font-size: 2.4rem;
+    line-height: 1.333em;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+  .main-section__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .main-section__btn--first {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 469px) {
+  .main-section {
+    background-image: none;
+    background-color: var(--secondary);
+    min-height: 90rem;
+  }
+}
+
+.dashbar {
+  padding-top: 6rem;
+  text-align: center;
+  background-color: var(--third);
+}
+.dashbar__img {
+  width: 10%;
+}
+.dashbar__text {
+  color: var(--primary);
+  font-size: 2.4rem;
+  line-height: 1.333em;
+  font-weight: 400;
+}
+.dashbar__name {
+  color: var(--primary);
+  font-size: 4.8rem;
+  line-height: 1em;
+  font-weight: 400;
+}
+.dashbar__title {
+  font-size: 4.8rem;
+  line-height: 1em;
+  font-weight: 400;
+  padding-bottom: 4.7rem;
+}
+.dashbar__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.dashbar__list-item {
+  padding-bottom: 2rem;
+  justify-content: space-evenly;
+}
+.dashbar__icon-bg {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: var(--third-light);
+  border-radius: 8px;
+  width: 16.5rem;
+  height: 16.5rem;
+  justify-content: center;
+  margin: 0;
+}
+.dashbar__icon {
+  font-size: 10rem;
+}
+
+.categories {
+  text-align: center;
+  padding-top: 10.3rem;
+}
+.categories__title {
+  font-size: 4.8rem;
+  line-height: 1em;
+  font-weight: 400;
+}
+.categories__text {
+  color: var(--primary);
+}
+.categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 3rem;
+}
+.categories__list-bg {
+  width: 270px;
+  height: 270px;
+  left: 215px;
+  top: 1853px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

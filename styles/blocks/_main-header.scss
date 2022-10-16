@@ -32,6 +32,7 @@
 
     &__navigation-menu {
         display: none;
+        left: 1%;
     }
 
     @media screen and (max-width: 1440px) {
@@ -44,6 +45,9 @@
                 display: none;
             }
 
+            &__navigation {
+                display: none;
+            }
 
             &__navigation-menu {
                 display: block;
@@ -51,6 +55,7 @@
                 color: var(--white);
                 position: absolute;
                 top: crem(4px);
+                font-size: crem(30px);
             }
 
         }

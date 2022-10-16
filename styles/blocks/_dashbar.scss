@@ -1,0 +1,57 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+@use '../shared/colors' as *;
+
+.dashbar {
+    padding-top: crem(60px);
+    text-align: center;
+    background-color: var(--third);
+
+    &__img {
+        width: 10%;
+    }
+
+    &__text {
+        color: var(--primary);
+        @include heading;
+    }
+
+    &__name {
+        color: var(--primary);
+        @include medium;
+    }
+
+    &__title {
+        @include medium;
+        padding-bottom: crem(47px);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__list-item {
+        padding-bottom: crem(20px);
+        justify-content: space-evenly;
+
+    }
+
+    &__icon-bg {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: var(--third-light);
+        border-radius: 8px;
+        width: crem(165px);
+        height: crem(165px);
+        justify-content: center;
+        margin: 0;
+    }
+
+    &__icon {
+        font-size: crem(100px);
+    }
+}
