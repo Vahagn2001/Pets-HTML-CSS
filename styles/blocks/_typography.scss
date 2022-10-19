@@ -10,10 +10,14 @@
     @include text
 }
 
+@mixin subtitle {
+    font-size: crem(24px);
+    line-height: 2.6em;
+    font-weight: 500;
+}
+
 .subtitle {
-    font-size: crem(16px);
-    line-height: 2.5em;
-    font-weight: 700;
+    @include subtitle;
 }
 
 .title {

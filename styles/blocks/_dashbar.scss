@@ -4,6 +4,7 @@
 @use '../shared/colors' as *;
 
 .dashbar {
+    @extend .container;
     padding-top: crem(60px);
     text-align: center;
     background-color: var(--third);
@@ -14,16 +15,16 @@
 
     &__text {
         color: var(--primary);
-        @include heading;
+        @extend .subtitle;
     }
 
     &__name {
         color: var(--primary);
-        @include medium;
+        @extend .medium;
     }
 
     &__title {
-        @include medium;
+        @extend .medium;
         padding-bottom: crem(47px);
     }
 
@@ -39,6 +40,10 @@
 
     }
 
+    &__description {
+        @extend .small;
+    }
+
     &__icon-bg {
         display: flex;
         align-items: center;
@@ -48,7 +53,7 @@
         width: crem(165px);
         height: crem(165px);
         justify-content: center;
-        margin: 0;
+        margin: auto;
     }
 
     &__icon {

@@ -4,11 +4,14 @@
 @use '../shared/colors' as *;
 
 .categories {
+    @extend .container;
     text-align: center;
     padding-top: crem(103px);
+    padding-bottom: crem(103px);
+    
 
     &__title {
-        @include medium;
+        @extend .subtitle;
     }
 
     &__text {
@@ -21,15 +24,27 @@
         align-content: center;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: crem(30px);
+        padding-top: crem(29px);
         gap: crem(30px);
     }
 
     &__list-bg {
-        width: 270px;
-        height: 270px;
-        left: 215px;
-        top: 1853px;
-        border-radius: 10px;
+        width: crem(200px);
+        height: crem(200px);
+        border-radius: crem(10px);
+        background-color: var(--third-light);
+        box-shadow: 0px 0px 20px #00000040;
+    }
+
+    &__img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+        padding-top: crem(50px);
+    }
+
+    &__title {
+        @extend .subtitle;
+        padding-top: crem(12px);
     }
 }

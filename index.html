@@ -22,7 +22,7 @@
             <ul class="main-header__links-list">
                 <li class="main-header__link-item">
                     <a href="#" class="main-header__link">
-                        <img src="./images/search.svg" alt="search"></i>
+                        <i class="fa fa-magnifying-glass main-header__icon"></i>
                     </a>
                 </li>
                 <li class="main-header__link-item">
@@ -35,7 +35,7 @@
                     <a href="#" class="main-header__link">Collections</a>
                 </li>
                 <li class="main-header__link-item">
-                    <img src="./images/logo.svg" alt="market logo"></i>
+                    <img src="./images/logo.svg" class="main-header__img" alt="market logo"></img>
                 </li>
                 <li class="main-header__link-item">
                     <a href="#" class="main-header__link">Services</a>
@@ -48,12 +48,12 @@
                 </li>
                 <li class="main-header__link-item">
                     <a href="#" class="main-header__link">
-                        <img src="./images/cart.svg" alt="cart"></i>
+                        <i class="fa fa-cart-shopping main-header__icon"></i>
                     </a>
                 </li>
                 <li class="main-header__link-item">
                     <a href="#" class="main-header__link">
-                        <img src="./images/user.svg" alt="user"></i>
+                        <i class="fa fa-user main-header__icon"></i>
                     </a>
                 </li>
             </ul>
@@ -61,7 +61,7 @@
     </header>
 
     <main class="main-section">
-        <section class="main-section__discraption">
+        <section class="main-section__description">
             <h1 class="main-section__titles">Pet food of
                 <br> Supermarket
             </h1>
@@ -94,7 +94,7 @@
                     <i class="fa fa-headset dashbar__icon"></i>
                 </div>
                 <p class="dashbar__text">24/7 Support</p>
-                <span class="dashbar__discraption">Shop online to get
+                <span class="dashbar__description">Shop online to get
                     <br> orders over $35 shipped
                     <br>fast and free.</span>
             </li>
@@ -104,7 +104,7 @@
                     <i class="fa fa-truck dashbar__icon"></i>
                 </div>
                 <p class="dashbar__text">Free Same-Day Delivery</p>
-                <span class="dashbar__discraption">Order by 2pm local time to
+                <span class="dashbar__description">Order by 2pm local time to
                     <br> get free delivery on orders
                     <br> $35+ today.</span>
             </li>
@@ -114,40 +114,145 @@
                     <i class="fa fa-shield-cat dashbar__icon"></i>
                 </div>
                 <p class="dashbar__text">Security payment</p>
-                <span class="dashbar__discraption">35% off your first order plus
+                <span class="dashbar__description">35% off your first order plus
                     <br> 5% off all future orders.</span>
             </li>
         </ul>
     </section>
 
     <section class="categories">
-        <h2 class="categories__title">
+        <h2 class="dashbar__title">
             <span class="categories__text">Top</span>
             categories
         </h2>
         <ul class="categories__list">
             <li class="categories__list-item">
                 <div class="categories__list-bg">
-                <img src="./images/cat-toy.png" alt="">
+                    <img src="./images/cat-toy.png" class="categories__img" alt="cat-toy">
                 </div>
-                <p class="dashbar__title">Cat Toys</p>
+                <p class="categories__title">Cat Toys</p>
             </li>
             <li class="categories__list-item">
                 <div class="categories__list-bg">
-                <img src="./images/dog-food.png" alt="">
+                    <img src="./images/dog-food.png" class="categories__img" alt="dog-food">
                 </div>
+                <p class="categories__title">Dog Food</p>
             </li>
             <li class="categories__list-item">
                 <div class="categories__list-bg">
-                <img src="./images/cat-food.png" alt="">
+                    <img src="./images/cat-food.png" class="categories__img" alt="cat-food">
                 </div>
+                <p class="categories__title">Cat Food</p>
             </li>
             <li class="categories__list-item">
                 <div class="categories__list-bg">
-                <img src="./images/dog-toy.png" alt="">
+                    <img src="./images/dog-toy.png" class="categories__img" alt="dog-toy">
                 </div>
+                <p class="categories__title">Dog Toys</p>
             </li>
         </ul>
+    </section>
+
+    <section class="buying-section">
+        <div class="buying-section__about">
+            <img src="./images/prtco.png" class="buying-section__img" alt="petco-logo">
+            <h2 class="buying-section__title">
+                Save big annually with our veterinarian
+                <br> recommended wellness plan.
+            </h2>
+            <button type="button" class="main-section__btn main-section__btn--first btn btn--primary">
+                Shop Now
+            </button>
+        </div>
+        <img src="./images/negr.png" alt="person and pet" class="buying-section__image">
+    </section>
+
+    <section class="products">
+        <h2 class="products__title">
+            <span class="products__text">Best</span>
+            Seller
+        </h2>
+
+        <ul class="products__list">
+            <li class="products__list-item">
+                <img src="./images/food-cat.png" class="products__img" alt="cat food">
+                <div class="products__icon-list">
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                </div>
+                <p class="products__texts">Nam justo libero porta ege
+                    <br> <span class="products__number">$85.00</span>
+                </p>
+            </li>
+
+            <li class="products__list-item">
+                <img src="./images/toy-cat.png" class="products__img" alt="cat toy">
+                <div class="products__icon-list">
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                </div>
+                <p class="products__texts">Morbi vel arcu scelerisque
+                    <br> <span class="products__number">$85.00</span>
+                </p>
+            </li>
+
+            <li class="products__list-item">
+                <img src="./images/food-dog.png" class="products__img" alt="dog food">
+                <div class="products__icon-list">
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                </div>
+                <p class="products__texts">Etiam commodo leo sed
+                    <br> <span class="products__number">$85.00</span>
+                </p>
+            </li>
+
+            <li class="products__list-item">
+                <img src="./images/toy-dog.png" class="products__img" alt="dog toy">
+                <div class="products__icon-list">
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                    <i class="fa fa-light fa-star products__icon"></i>
+                </div>
+                <p class="products__texts">Morbi vel arcu scelerisque
+                    <br> <span class="products__number">$85.00</span>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="about">
+        <div class="about__block">
+            <img src="./images/cat.png" class="about__img" alt="cat">
+            <div class="about__description">
+                <img src="./images/taste.png" class="about__icon" alt="taste">
+                <h2 class="about__title">
+                    Taste it, love it or we’ll replace
+                    <br> it… Guaranteed!
+                </h2>
+                <p class="about__text">
+                    At Petio, we believe your dog and cat will love
+                    <br> Their food so much that if they don’t… we’ll
+                    <br> Help you find a replacement. That’s our taste
+                    <br> Guarantee.
+                </p>
+
+                <button type="button" class="main-section__btn main-section__btn--first btn about__btn btn--primary">
+                    Find More
+                </button>
+            </div>
+        </div>
     </section>
 </body>
 

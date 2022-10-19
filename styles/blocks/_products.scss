@@ -1,0 +1,82 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+@use '../shared/colors' as *;
+
+.products {
+    @extend .container;
+    padding-top: crem(60px);
+    text-align: center;
+    padding-bottom: crem(103px);
+
+    &__title {
+        @extend .medium;
+        color: var(--black);
+        padding-bottom: crem(47px);
+    }
+
+    &__text {
+        color: var(--primary);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: crem(10px);
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__icon {
+        color: var(--grey);
+        transition: 0.3s;
+
+        &:active,
+        &:hover {
+            color: var(--secondary);
+        }
+    }
+
+    &__texts {
+        @extend .subtitle;
+    }
+
+    &__number {
+        color: var(--primary);
+    }
+
+    @media screen and (max-width: 1300px) {
+        padding-left: crem(30px);
+        padding-right: crem(30px);
+    }
+
+
+    @media screen and (max-width: 843px) {
+        padding-left: crem(100px);
+        padding-right: crem(100px);
+
+        &__icon-list,
+        &__texts,
+        &__number {
+           @include text;
+            padding-bottom: crem(30px);
+        }
+
+        &__list {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            gap: crem(30px);
+        }
+
+        &__list-item {
+            width: 70%;
+            height: auto;
+        }
+    }
+}
