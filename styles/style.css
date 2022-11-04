@@ -300,7 +300,7 @@ body {
 .main-section {
   margin: 0;
   background-color: var(--secondary);
-  background-image: url(../../images/background.png);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   min-height: 90rem;
   max-width: 160rem;
