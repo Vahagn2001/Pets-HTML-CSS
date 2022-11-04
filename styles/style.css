@@ -586,7 +586,7 @@ body {
 }
 
 .about {
-  background-image: url(../../images/section-bg.png);
+  background-image: url(../images/section-bg.png);
   background-color: var(--white);
   text-align: center;
   padding-top: 10.3rem;
