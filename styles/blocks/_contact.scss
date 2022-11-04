@@ -1,0 +1,161 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+@use '../shared/colors' as *;
+@use '../shared/reset' as *;
+
+.contact {
+    @extend .container;
+    padding-top: crem(103px);
+    padding-bottom: crem(50px);
+    background-color: var(--primary);
+    gap: crem(50px);
+
+    &__img {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--white);
+        border-bottom: 1px solid #fff;
+    }
+
+    &__list {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: var(--white);
+    }
+
+    &__list-item {
+        position: relative;
+        @extend .text;
+    }
+
+    &__list-item__subtitle {
+        @extend .heading;
+    }
+
+    &__oder-list {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: crem(10px);
+        @extend .medium;
+    }
+
+    &__oder-list__item {
+        @extend .subtitle;
+    }
+
+    &__link {
+        text-decoration: underline;
+    }
+
+    &__card-list {
+        padding-top: crem(30px);
+        text-align: center;
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        gap: crem(10px);
+        @extend .medium;
+    }
+
+    &__card-listitem {
+        @extend .subtitle;
+    }
+
+    @media screen and (max-width: 1500px) {
+        padding-left: crem(53px);
+        padding-right: crem(53px);
+    }
+
+    @media screen and (max-width: 1250px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+        &__list-item {
+            @include text;
+        }
+
+        &__list-item__subtitle {
+            @include subtitle;
+        }
+
+        &__card-list,
+        &__order-list {
+            @include text;
+        }
+    }
+
+    @media screen and (max-width: 645px) {
+        padding-left: 0;
+        padding-right: 0;
+
+        &__img {
+            display: none;
+        }
+
+        &__oder-list__item {
+            @include heading;
+        }
+    }
+
+    @media screen and (max-width: 560px) {
+        &__list-item {
+            @include small;
+        }
+
+        &__list-item__subtitle {
+            @include text;
+        }
+
+        &__oder-list__item,
+        &__card-list {
+            @include text;
+        }
+
+    }
+
+    @media screen and (max-width: 420px) {
+        padding-top: crem(53px);
+        @include small;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding-left: crem(50px);
+        padding-right: crem(50px);
+
+
+        &__list-item__subtitle  {
+            @include heading;
+        }
+
+        &__list {
+            gap: crem(50px)
+        }
+
+        &__img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        &__list-item {
+            @include text;
+        }
+
+    }
+
+    @media screen and (max-width: 320px) {
+        
+    }
+}

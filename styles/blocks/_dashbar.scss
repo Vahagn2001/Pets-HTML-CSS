@@ -59,4 +59,24 @@
     &__icon {
         font-size: crem(100px);
     }
+
+    @media screen and (max-width: 500px) {
+        padding-left: crem(50px);
+        padding-right: crem(50px);
+
+        &__img {
+            width: 50%
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        &__img {
+            width: 20%;
+        }
+    }
+
+    @media screen and (max-width: 645px) {
+        padding-left: crem(10px);
+        padding-right: crem(10px);
+    }
 }

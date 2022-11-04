@@ -44,8 +44,9 @@
 
     }
 
-    &__btn--first {
-        margin-right: crem(20px);
+    &__btn--second {
+        border: crem(2px) solid var(--primary);
+        margin-left: crem(20px);
     }
 
     @media screen and (max-width: 1440px) {
@@ -59,7 +60,7 @@
         min-height: crem(700px);
 
         &__description {
-            top: 40%;
+            top: 50%;
             left: 5%;
             right: 5%;
             transform: translateY(-50%);
@@ -89,6 +90,6 @@
     @media screen and (max-width: 469px) {
         background-image: none;
         background-color: var(--secondary);
-        min-height: crem(900px);
+        min-height: crem(600px);
     }
 }

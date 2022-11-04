@@ -1,0 +1,85 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+@use '../shared/colors' as *;
+
+.about {
+    @extend .container;
+    background-image: url(../../images/section-bg.png);
+    background-color: var(--white);
+    text-align: center;
+    padding-top: crem(103px);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: crem(50px);
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 80%;
+        height: auto;
+        max-width: crem(200px);
+    }
+
+    &__title,
+    &__text {
+        text-align: justify;
+    }
+
+    &__title {
+        @extend .medium;
+    }
+
+    &__text {
+        @extend .heading;
+    }
+
+    &__btn {
+        margin-top: crem(20px);
+    }
+
+    &__img {
+        width: 40%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-position: center bottom;
+
+        @media screen and (max-width: 1560px) {
+            width: 30%;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-left: crem(10px);
+        padding-right: crem(10px);
+
+        &__img {
+            display: none;
+        }
+
+        &__title {
+            @include subtitle;
+        }
+
+        &__text {
+            @include text;
+        }
+    }
+
+    @media screen and (max-width: 645px) {
+        padding-left: crem(10px);
+        padding-right: crem(10px);
+
+        &__img {
+            width: 20%;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 @use '../shared/functions' as *;
 
 @mixin text {
-    font-size: crem(16px);
+    font-size: crem(15px);
     line-height: 2em;
     font-weight: 500;
 }

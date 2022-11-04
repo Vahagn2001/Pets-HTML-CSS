@@ -52,18 +52,25 @@
     @media screen and (max-width: 1300px) {
         padding-left: crem(30px);
         padding-right: crem(30px);
-    }
 
-
-    @media screen and (max-width: 843px) {
-        padding-left: crem(100px);
-        padding-right: crem(100px);
 
         &__icon-list,
         &__texts,
         &__number {
            @include text;
-            padding-bottom: crem(30px);
+        }
+    }
+
+
+    @media screen and (max-width: 500px) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: crem(33px);
+
+        &__icon-list,
+        &__texts,
+        &__number {
+           @include text;
         }
 
         &__list {

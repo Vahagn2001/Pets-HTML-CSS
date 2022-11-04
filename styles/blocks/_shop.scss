@@ -1,0 +1,56 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+@use '../shared/colors' as *;
+
+.shop {
+    @extend .container;
+    background-image: url(../../images/bg-img.png);
+    background-color: var(--white);
+    text-align: center;
+    padding-top: crem(103px);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: crem(50px);
+    margin-bottom: crem(103px);
+
+    &__title {
+        @extend .medium;
+    }
+
+    &__subtitle {
+        color: var(--primary);
+        @extend .medium;
+    }
+
+    &__text {
+        @extend .subtitle;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    @media screen and (max-width: 645px) {
+        padding-left: crem(10px);
+        padding-right: crem(10px);
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: crem(40px);
+
+
+        &__title,
+        &__subtitle {
+            @include subtitle;
+        }
+
+        &__text {
+            @include small;
+            padding-bottom: crem(27px);
+        }
+    }
+}

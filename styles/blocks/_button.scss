@@ -3,9 +3,9 @@
 
 .btn {
     padding: crem(14px) crem(24px);
-    border: crem(2px) solid var(--primary);
     border-radius: crem(110px);
     width: crem(201px);
+    background-color: var(--primary);
 
     @extend .text;
 
@@ -20,7 +20,11 @@
         background-color: transparent;
     }
 
-    &:hover:first-child {
+    &:hover {
         background-color: var(--primary-light);
+    }
+
+    &--second:hover {
+        color: var(--white);
     }
 }

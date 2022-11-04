@@ -1,0 +1,49 @@
+@use '../shared/functions' as *;
+@use './typography' as *;
+@use './layout' as *;
+@use '../shared/colors' as *;
+
+.brands {
+    @extend .container;
+    padding-top: crem(60px);
+    text-align: center;
+    padding-bottom: crem(103px);
+
+
+    &__subtitle {
+        color: var(--primary);
+        @extend .medium;
+    }
+
+    &__title {
+        @extend .medium;
+        padding-bottom: crem(47px);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: crem(20px);
+    }
+
+    &__list-item {
+        border: 1px solid var(--primary);
+        border-radius: crem(15px);
+        padding-left: crem(50px);
+        padding-right: crem(50px);
+    }
+
+    &__img {
+        max-width: crem(200px);
+    }
+    @media screen and (max-width: 900px) {
+        padding-left: crem(10px);
+        padding-right: crem(10px);
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-left: crem(10px);
+        padding-right: crem(10px);
+    }
+}
